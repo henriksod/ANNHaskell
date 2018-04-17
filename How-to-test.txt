@@ -1,0 +1,19 @@
+How to test Your solution to Assignment 2
+
+There are two sets of face/facit files in this archive:
+
+training-A.txt       contains the first 200 faces from training.txt
+facit-A.txt          contains the corresponding facit values
+
+test-B.txt           contains the last 100 faces from training.txt
+facit-B.txt          contains the corresponing facit values
+
+run your program like this (Java example):
+
+java Faces training-A.txt facit-A.txt test-B.txt > result.txt
+
+and then run the 'grading' program, which tests your results against the facit:
+
+java FaceTest facit-B.txt result.txt
+
+The program will output the percentage of correct classifications.

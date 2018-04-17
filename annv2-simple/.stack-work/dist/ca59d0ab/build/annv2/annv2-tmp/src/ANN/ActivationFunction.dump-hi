@@ -1,0 +1,194 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-11 16:57:53.7376984 UTC
+
+interface main@main:ANN.ActivationFunction 8002
+  interface hash: 6b77000fe9ee9b95baf4029c2713293d
+  ABI hash: e92592ac434db9b1002458bf0b297166
+  export-list hash: ec8866300e01984a2bdb93e4524c6707
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a8064a744799bfe694f5aed9eb4f47a9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ANN.ActivationFunction.identityAS
+  ANN.ActivationFunction.sigmoidAS
+  ANN.ActivationFunction.tanhAS
+  ANN.ActivationFunction.ActivationSpec{ANN.ActivationFunction.ActivationSpec asF asF' desc}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Float b620368aab866c2bb9d3a0a459566b84
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+69329e3273c8ec63dc4b35c2a20342cb
+  $tc'ActivationSpec :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2753849280023060713##
+                   9531378279229345297##
+                   ANN.ActivationFunction.$trModule
+                   ANN.ActivationFunction.$tc'ActivationSpec1) -}
+5e00bbb67ef634321532ac9036fc4512
+  $tc'ActivationSpec1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ActivationSpec"#) -}
+8bd3696ec9b26b99e52832380771e0ae
+  $tcActivationSpec :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4313667563449147996##
+                   3422815813598865981##
+                   ANN.ActivationFunction.$trModule
+                   ANN.ActivationFunction.$tcActivationSpec1) -}
+3f67eea47db3c03e0a16b9d8e1ecfbc4
+  $tcActivationSpec1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ActivationSpec"#) -}
+4cf379ec160e9e8473bae8a3f23b9c23
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ANN.ActivationFunction.$trModule2
+                   ANN.ActivationFunction.$trModule1) -}
+230f7b49fcc046b27f933c4eee690cc6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ANN.ActivationFunction"#) -}
+ebdc0a20661627243dbf072ccc515de8
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+9fb3d0e3a35a2a741e41dc453db6020c
+  data ActivationSpec
+    = ActivationSpec {asF :: GHC.Types.Double -> GHC.Types.Double,
+                      asF' :: GHC.Types.Double -> GHC.Types.Double,
+                      desc :: GHC.Base.String}
+a4dc63e3d0ae4f8800932b7e248d8ea7
+  asF ::
+    ANN.ActivationFunction.ActivationSpec
+    -> GHC.Types.Double -> GHC.Types.Double
+  RecSel Left ANN.ActivationFunction.ActivationSpec
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.ActivationFunction.ActivationSpec) ->
+                 case ds of wild { ANN.ActivationFunction.ActivationSpec ds1 ds2 ds3 ->
+                 ds1 }) -}
+32bb033ee21b2598ea9ffb699c905745
+  asF' ::
+    ANN.ActivationFunction.ActivationSpec
+    -> GHC.Types.Double -> GHC.Types.Double
+  RecSel Left ANN.ActivationFunction.ActivationSpec
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.ActivationFunction.ActivationSpec) ->
+                 case ds of wild { ANN.ActivationFunction.ActivationSpec ds1 ds2 ds3 ->
+                 ds2 }) -}
+5cbaf37ab04a8861b1c9f21d8947007b
+  desc :: ANN.ActivationFunction.ActivationSpec -> GHC.Base.String
+  RecSel Left ANN.ActivationFunction.ActivationSpec
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.ActivationFunction.ActivationSpec) ->
+                 case ds of wild { ANN.ActivationFunction.ActivationSpec ds1 ds2 ds3 ->
+                 ds3 }) -}
+c96a93836cc02d211903927ccc87a195
+  identityAS :: ANN.ActivationFunction.ActivationSpec
+  {- Strictness: m,
+     Unfolding: (ANN.ActivationFunction.ActivationSpec
+                   (GHC.Base.id @ GHC.Types.Double)
+                   ANN.ActivationFunction.identityAS2
+                   ANN.ActivationFunction.identityAS1) -}
+75523c75a45edef6e10b53e27baa6aa7
+  identityAS1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "identity"#) -}
+1acfd16b9003c49eac57954adffeabab
+  identityAS2 :: GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Double) ->
+                 ANN.ActivationFunction.identityAS3) -}
+a58d3b47953df09d300305f51fa43366
+  identityAS3 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 1.0##) -}
+ece3bb2b4ee61115798706c206b4412a
+  sigmoidAS :: ANN.ActivationFunction.ActivationSpec
+  {- Strictness: m,
+     Unfolding: (ANN.ActivationFunction.ActivationSpec
+                   ANN.ActivationFunction.sigmoidAS_$ssigmoid
+                   ANN.ActivationFunction.sigmoidAS2
+                   ANN.ActivationFunction.sigmoidAS1) -}
+c42b7f0db0bbd1e73d1725b7bc58b313
+  sigmoidAS1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "sigmoid"#) -}
+59fe2ae6d8ddc36ceb140b02bccf84da
+  sigmoidAS2 :: GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Types.Double) ->
+                 case eta of wild { GHC.Types.D# x ->
+                 case GHC.Prim./##
+                        1.0##
+                        (GHC.Prim.+##
+                           1.0##
+                           (GHC.Prim.expDouble#
+                              (GHC.Prim.negateDouble# x))) of wild2 { DEFAULT ->
+                 case GHC.Prim./##
+                        1.0##
+                        (GHC.Prim.+##
+                           1.0##
+                           (GHC.Prim.expDouble#
+                              (GHC.Prim.negateDouble# x))) of wild1 { DEFAULT ->
+                 GHC.Types.D#
+                   (GHC.Prim.*## wild2 (GHC.Prim.-## 1.0## wild1)) } } }) -}
+7170df1e3e8d4297122f4c3fe1d73783
+  sigmoidAS_$ssigmoid :: GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Types.Double) ->
+                 case eta of wild { GHC.Types.D# x ->
+                 case GHC.Prim./##
+                        1.0##
+                        (GHC.Prim.+##
+                           1.0##
+                           (GHC.Prim.expDouble#
+                              (GHC.Prim.negateDouble# x))) of wild2 { DEFAULT ->
+                 GHC.Types.D# wild2 } }) -}
+18d2feb8fe62b4fb68df4174b2dd5656
+  tanhAS :: ANN.ActivationFunction.ActivationSpec
+  {- Strictness: m,
+     Unfolding: (ANN.ActivationFunction.ActivationSpec
+                   GHC.Float.tanhDouble
+                   ANN.ActivationFunction.tanhAS2
+                   ANN.ActivationFunction.tanhAS1) -}
+1ce1b2eb92f38ffe121b692d6b01ac52
+  tanhAS1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "tanh"#) -}
+dae821baf80e283473abd0d7aed1d472
+  tanhAS2 :: GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Types.Double) ->
+                 case eta of wild { GHC.Types.D# x ->
+                 let {
+                   x1 :: GHC.Prim.Double# = GHC.Prim.tanhDouble# x
+                 } in
+                 GHC.Types.D# (GHC.Prim.-## 1.0## (GHC.Prim.*## x1 x1)) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

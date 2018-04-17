@@ -1,0 +1,454 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-12 14:57:16.8903618 UTC
+
+interface main@main:ANN.Perceptron 8002
+  interface hash: 10a83ea7ed9b864d6143d583c0596dd3
+  ABI hash: 42180e0ed1dff9196cf0734ed7e80249
+  export-list hash: def1c14bb48bbf72bff5afd9b312ff52
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a8064a744799bfe694f5aed9eb4f47a9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ANN.Perceptron.backpropagateNet
+  ANN.Perceptron.buildPerceptron
+  ANN.Perceptron.getOutput
+  ANN.Perceptron.getWeights
+  ANN.Perceptron.propagateNet
+  ANN.Perceptron.updateNet
+  ANN.Perceptron.Perceptron{ANN.Perceptron.Perceptron layers learningRate}
+module dependencies: ANN.ActivationFunction ANN.Layer
+                     ANN.MatrixUtils
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 loop-0.3.0@loop-0.3.0-4tGn4RSY02pFTwJ5L4CYRr
+                      matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Err 20faef8829fd13c027d0ee2213637534
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ANN.ActivationFunction e92592ac434db9b1002458bf0b297166
+  exports: ec8866300e01984a2bdb93e4524c6707
+  ActivationSpec 9fb3d0e3a35a2a741e41dc453db6020c
+import  -/  ANN.Layer 0f920668e5fe541d472b9c47fcb97695
+  exports: 23c3cc260ccc1ffb148f4c2ade900907
+  BackpropagatedLayer edfe419f1619c6d9c281969f45f86cc5
+  Layer 3740adea9140c73e07d2275218821265
+  Layer b866aaba8309eb48fc1f8620fe1104f2
+  PropagatedLayer 4b9e3fdffd66404689c810f9444e6174
+  PropagatedSensorLayer ab52206ace989c455d40d943f6e52c33
+  backpropagate 30467f37d0f45655558c284b35c3dc4d
+  backpropagateFinalLayer 6c0942fbf9468ddbddcae42f68a4fa2c
+  lAS cd6d192b197bb01b92cd195005cf9a7a
+  lB d220b6580bc827c6c2637cc0fe4fd5d7
+  lW 2bfaa02d6948c457970f6022ed2e63ba
+  pOut 263ec8019df650b13dee4c57bd99c89e
+  pW 2386a24880499cce20f6d3981757316a
+  propagate f43375f9149eac3d54fe5599e8aabda7
+  update b4fcf00911e6ccd511a0228926fa4020
+import  -/  ANN.MatrixUtils 57ce8606ce2775e9626281102ca3989e
+  exports: cc0a29729dbcc70af12dbc4541a77cf9
+  ColumnVector 4163f76af675644a6280005b342f5ebf
+import  -/  matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w:Data.Matrix bf891f258ea75a4e62c2cf20c00a338b
+771551303910855c2e9ac921b94d3f4f
+  $tc'Perceptron :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1921654000870173208##
+                   10990788617219064011##
+                   ANN.Perceptron.$trModule
+                   ANN.Perceptron.$tc'Perceptron1) -}
+35583d5d60010fc980a0be576e1587bf
+  $tc'Perceptron1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Perceptron"#) -}
+81a21a62d3a7c5d9f7a923a4e5f0b847
+  $tcPerceptron :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11532224942561396583##
+                   11563769859837652143##
+                   ANN.Perceptron.$trModule
+                   ANN.Perceptron.$tcPerceptron1) -}
+f93e580bc70fef3658d040bd619e4d44
+  $tcPerceptron1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Perceptron"#) -}
+1d958d9bb500b4e4336c1276eaafe256
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ANN.Perceptron.$trModule2
+                   ANN.Perceptron.$trModule1) -}
+fb02f2d9648cbfb901ed8abe09c544cd
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ANN.Perceptron"#) -}
+085432e249af335fa458dc4a5dcc1143
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+7ba3f5297b6763ea65df19705e6217e1
+  $wbackpropagateNet ::
+    ANN.MatrixUtils.ColumnVector GHC.Types.Double
+    -> [ANN.Layer.PropagatedLayer]
+    -> (# ANN.Layer.BackpropagatedLayer,
+          [ANN.Layer.BackpropagatedLayer] #)
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,U,U(U,A,U))><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ (w :: ANN.MatrixUtils.ColumnVector GHC.Types.Double)
+                   (w1 :: [ANN.Layer.PropagatedLayer]) ->
+                 case w1 of wild {
+                   []
+                   -> case GHC.List.init2
+                      ret_ty (# ANN.Layer.BackpropagatedLayer,
+                                [ANN.Layer.BackpropagatedLayer] #)
+                      of {}
+                   : x xs
+                   -> GHC.List.$wscanr
+                        @ ANN.Layer.PropagatedLayer
+                        @ ANN.Layer.BackpropagatedLayer
+                        ANN.Layer.backpropagate
+                        (case ANN.Layer.$wbackpropagateFinalLayer
+                                (ANN.Perceptron.backpropagateNet_$sgo
+                                   (GHC.List.lastError @ ANN.Layer.PropagatedLayer)
+                                   x
+                                   xs)
+                                w of ww { (#,,,,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
+                         ANN.Layer.BackpropagatedLayer
+                           ww1
+                           ww2
+                           ww3
+                           ww4
+                           ww5
+                           ww6
+                           ww7
+                           ww8
+                           ww9 })
+                        (GHC.List.init1 @ ANN.Layer.PropagatedLayer x xs) }) -}
+95ced84d2f4ef7e7aa62bb850efa34a4
+  $wbuildPerceptron ::
+    GHC.Types.Double
+    -> [Data.Matrix.Matrix GHC.Types.Double]
+    -> ANN.ActivationFunction.ActivationSpec
+    -> (# [ANN.Layer.Layer], GHC.Types.Double #)
+  {- Arity: 3, Strictness: <L,U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Double)
+                   (w1 :: [Data.Matrix.Matrix GHC.Types.Double])
+                   (w2 :: ANN.ActivationFunction.ActivationSpec) ->
+                 (# case w1 of wild {
+                      [] -> GHC.Types.[] @ ANN.Layer.Layer
+                      : x xs
+                      -> GHC.Base.map
+                           @ (Data.Matrix.Matrix GHC.Types.Double)
+                           @ ANN.Layer.Layer
+                           (\ (w3 :: Data.Matrix.Matrix GHC.Types.Double) ->
+                            ANN.Layer.Layer
+                              w3
+                              (case w3 of wild1 { Data.Matrix.M dt dt1 dt2 dt3 dt4 ds1 ->
+                               Data.Matrix.M
+                                 @ GHC.Types.Double
+                                 dt
+                                 1#
+                                 0#
+                                 0#
+                                 1#
+                                 (case GHC.Magic.runRW#
+                                         @ 'GHC.Types.PtrRepLifted
+                                         @ (Data.Vector.Vector GHC.Types.Double)
+                                         (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                          let {
+                                            $j :: GHC.Prim.Int#
+                                                  -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                        Data.Vector.Vector GHC.Types.Double #)
+                                              {- Arity: 1, Strictness: <S,U> -}
+                                            = \ (n# :: GHC.Prim.Int#)[OneShot] ->
+                                              case GHC.Prim.newArray#
+                                                     @ GHC.Types.Double
+                                                     @ (Control.Monad.Primitive.PrimState
+                                                          (GHC.ST.ST GHC.Prim.RealWorld))
+                                                     n#
+                                                     (Data.Vector.Mutable.uninitialised
+                                                        @ GHC.Types.Double)
+                                                     s1
+                                                       `cast`
+                                                     (GHC.Prim.State#
+                                                        (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                  <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv ipv1 ->
+                                              letrec {
+                                                $s$wfoldlM'_loop :: GHC.Prim.State#
+                                                                      GHC.Prim.RealWorld
+                                                                    -> GHC.Prim.Int#
+                                                                    -> [GHC.Types.Double]
+                                                                    -> GHC.Prim.Int#
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld,
+                                                                          GHC.Types.Int #)
+                                                  {- Arity: 4, Strictness: <S,U><S,U><L,1*U><L,U> -}
+                                                = \ (sc :: GHC.Prim.State#
+                                                             GHC.Prim.RealWorld)[OneShot]
+                                                    (sc1 :: GHC.Prim.Int#)
+                                                    (sc2 :: [GHC.Types.Double])
+                                                    (sc3 :: GHC.Prim.Int#) ->
+                                                  case GHC.Prim.tagToEnum#
+                                                         @ GHC.Types.Bool
+                                                         (GHC.Prim.<=# sc1 0#) of wild2 {
+                                                    GHC.Types.False
+                                                    -> case sc2 of wild3 {
+                                                         [] -> (# sc, GHC.Types.I# sc3 #)
+                                                         : x1 xs1
+                                                         -> case GHC.Prim.writeArray#
+                                                                   @ (Control.Monad.Primitive.PrimState
+                                                                        (GHC.ST.ST
+                                                                           GHC.Prim.RealWorld))
+                                                                   @ GHC.Types.Double
+                                                                   ipv1
+                                                                   sc3
+                                                                   x1
+                                                                   sc
+                                                                     `cast`
+                                                                   (GHC.Prim.State#
+                                                                      (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                                <GHC.Prim.RealWorld>_N)))_R of s'# { DEFAULT ->
+                                                            $s$wfoldlM'_loop
+                                                              s'#
+                                                                `cast`
+                                                              (GHC.Prim.State#
+                                                                 (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                      <GHC.Prim.RealWorld>_N))_R
+                                                              (GHC.Prim.-# sc1 1#)
+                                                              xs1
+                                                              (GHC.Prim.+# sc3 1#) } }
+                                                    GHC.Types.True -> (# sc, GHC.Types.I# sc3 #) }
+                                              } in
+                                              case $s$wfoldlM'_loop
+                                                     ipv
+                                                       `cast`
+                                                     (GHC.Prim.State#
+                                                        (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                             <GHC.Prim.RealWorld>_N))_R
+                                                     dt
+                                                     ANN.Perceptron.buildPerceptron2
+                                                     0# of ds3 { (#,#) ipv6 ipv7 ->
+                                              case ipv7 of dt5 { GHC.Types.I# dt6 ->
+                                              case GHC.Prim.unsafeFreezeArray#
+                                                     @ (Control.Monad.Primitive.PrimState
+                                                          (GHC.ST.ST GHC.Prim.RealWorld))
+                                                     @ GHC.Types.Double
+                                                     ipv1
+                                                     ipv6
+                                                       `cast`
+                                                     (GHC.Prim.State#
+                                                        (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                  <GHC.Prim.RealWorld>_N)))_R of ds { (#,#) ipv2 ipv3 ->
+                                              (# ipv2
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                         <GHC.Prim.RealWorld>_N))_R,
+                                                 Data.Vector.Vector
+                                                   @ GHC.Types.Double
+                                                   0#
+                                                   dt6
+                                                   ipv3 #) } } } }
+                                          } in
+                                          case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.<=# dt 0#) of wild2 {
+                                            GHC.Types.False -> $j dt
+                                            GHC.Types.True -> $j 0# }) of ds2 { (#,#) ipv1 ipv2 ->
+                                  ipv2 }) })
+                              w2)
+                           (GHC.Types.:
+                              @ (Data.Matrix.Matrix GHC.Types.Double)
+                              x
+                              (case GHC.List.$wscanlGo
+                                      @ (Data.Matrix.Matrix GHC.Types.Double)
+                                      @ (Data.Matrix.Matrix GHC.Types.Double)
+                                      @ (Data.Matrix.Matrix GHC.Types.Double)
+                                      @ (Data.Matrix.Matrix GHC.Types.Double)
+                                      ANN.Perceptron.checkDimensions
+                                      x
+                                      xs of ww { (#,#) ww1 ww2 ->
+                               ww2 })) },
+                    w #)) -}
+ded8f586c0ae593cdd26e369e29a3fb2
+  $wpropagateNet ::
+    ANN.MatrixUtils.ColumnVector GHC.Types.Double
+    -> [ANN.Layer.Layer] -> [ANN.Layer.PropagatedLayer]
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,U,U,U(U,U,U))><L,U>,
+     Inline: [0] -}
+447a829f42705b4ef0c6bf3fcc6b31bc
+  $wupdateNet ::
+    ANN.Perceptron.Perceptron
+    -> [ANN.Layer.BackpropagatedLayer]
+    -> (# [ANN.Layer.Layer], GHC.Types.Double #)
+  {- Arity: 2, Strictness: <L,U(A,U(U))><S,1*U>, Inline: [0] -}
+92ff65319820ff81577825b2a552c78a
+  data Perceptron
+    = Perceptron {layers :: [ANN.Layer.Layer],
+                  learningRate :: GHC.Types.Double}
+fd92f6c83da510db7bcccd26d148bb8c
+  backpropagateNet ::
+    ANN.MatrixUtils.ColumnVector GHC.Types.Double
+    -> [ANN.Layer.PropagatedLayer] -> [ANN.Layer.BackpropagatedLayer]
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,U,U(U,A,U))><S,1*U>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ANN.MatrixUtils.ColumnVector GHC.Types.Double)
+                   (w1 :: [ANN.Layer.PropagatedLayer]) ->
+                 case ANN.Perceptron.$wbackpropagateNet
+                        w
+                        w1 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ ANN.Layer.BackpropagatedLayer ww1 ww2 }) -}
+de1f5ac06cce4e77e3d064983ca20c5d
+  backpropagateNet_$sgo ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.Layer.PropagatedLayer
+    -> [ANN.Layer.PropagatedLayer]
+    -> ANN.Layer.PropagatedLayer
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U><L,U><L,U> -}
+c706eec8b4fb9484c96e95ad0c284f63
+  buildPerceptron ::
+    GHC.Types.Double
+    -> [Data.Matrix.Matrix GHC.Types.Double]
+    -> ANN.ActivationFunction.ActivationSpec
+    -> ANN.Perceptron.Perceptron
+  {- Arity: 3, Strictness: <L,U><L,1*U><L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Double)
+                   (w1 :: [Data.Matrix.Matrix GHC.Types.Double])
+                   (w2 :: ANN.ActivationFunction.ActivationSpec) ->
+                 case ANN.Perceptron.$wbuildPerceptron
+                        w
+                        w1
+                        w2 of ww { (#,#) ww1 ww2 ->
+                 ANN.Perceptron.Perceptron ww1 ww2 }) -}
+83d215166def720109b2654898712e1c
+  buildPerceptron1 :: Data.Matrix.Matrix GHC.Types.Double
+  {- Strictness: x -}
+b905766f1cec8eae1d15a27df76506b6
+  buildPerceptron2 :: [GHC.Types.Double]
+  {- Unfolding: (case GHC.Real.$wnumericEnumFrom
+                        @ GHC.Types.Double
+                        GHC.Float.$fFractionalDouble
+                        ANN.Perceptron.buildPerceptron3 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Types.Double ww1 ww2 }) -}
+0697d14f2862feee0a7f3d54e6d6ad74
+  buildPerceptron3 :: GHC.Types.Double
+  {- HasNoCafRefs, Unfolding: (GHC.Types.D# 1.0##) -}
+12708e17bbcffef650ed88ebad8cbb04
+  checkDimensions ::
+    Data.Matrix.Matrix GHC.Types.Double
+    -> Data.Matrix.Matrix GHC.Types.Double
+    -> Data.Matrix.Matrix GHC.Types.Double
+  {- Arity: 2,
+     Strictness: <S(SLLLLL),1*U(U,A,A,A,A,A)><S(LSLLLL),1*U(U,U,U,U,U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (w1 :: Data.Matrix.Matrix GHC.Types.Double)
+                   (w2 :: Data.Matrix.Matrix GHC.Types.Double) ->
+                 case w1 of wild { Data.Matrix.M dt dt1 dt2 dt3 dt4 ds1 ->
+                 case w2 of wild1 { Data.Matrix.M dt7 dt8 dt9 dt10 dt11 ds2 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# dt dt8) of wild2 {
+                   GHC.Types.False -> ANN.Perceptron.buildPerceptron1
+                   GHC.Types.True -> wild1 } } }) -}
+7a5e6bb635ea8911c450957746e701c9
+  getOutput ::
+    [ANN.Layer.PropagatedLayer]
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [ANN.Layer.PropagatedLayer]) ->
+                 case ANN.Perceptron.getOutput_go
+                        x
+                        (GHC.List.lastError @ ANN.Layer.PropagatedLayer) of wild {
+                   ANN.Layer.PropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 -> ds2
+                   ANN.Layer.PropagatedSensorLayer ds1 -> ds1 }) -}
+c8ecf0967575aa814849fe1432cacbd2
+  getOutput_go ::
+    [ANN.Layer.PropagatedLayer]
+    -> ANN.Layer.PropagatedLayer -> ANN.Layer.PropagatedLayer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+fb3a4fb621bd7c69b7f4e79c7467dd70
+  getWeights ::
+    [ANN.Layer.PropagatedLayer]
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [ANN.Layer.PropagatedLayer]) ->
+                 case ANN.Perceptron.getWeights_go
+                        x
+                        (GHC.List.lastError @ ANN.Layer.PropagatedLayer) of wild {
+                   ANN.Layer.PropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 -> ds4
+                   ANN.Layer.PropagatedSensorLayer ipv
+                   -> ANN.Layer.backpropagateFinalLayer3 }) -}
+9199489b0c9fab7f9de90c0b830e9b53
+  getWeights_go ::
+    [ANN.Layer.PropagatedLayer]
+    -> ANN.Layer.PropagatedLayer -> ANN.Layer.PropagatedLayer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+6bdb856b4e9d07e19070a37a81539cce
+  layers :: ANN.Perceptron.Perceptron -> [ANN.Layer.Layer]
+  RecSel Left ANN.Perceptron.Perceptron
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Perceptron.Perceptron) ->
+                 case ds of wild { ANN.Perceptron.Perceptron ds1 ds2 -> ds1 }) -}
+156f9b70dc913cafeb5ac977c0a8d295
+  learningRate :: ANN.Perceptron.Perceptron -> GHC.Types.Double
+  RecSel Left ANN.Perceptron.Perceptron
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Perceptron.Perceptron) ->
+                 case ds of wild { ANN.Perceptron.Perceptron ds1 ds2 -> ds2 }) -}
+567a7c91979fb9fa61b8b273f88c3dd5
+  propagateNet ::
+    ANN.MatrixUtils.ColumnVector GHC.Types.Double
+    -> ANN.Perceptron.Perceptron -> [ANN.Layer.PropagatedLayer]
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,U,U,U(U,U,U))><S,1*U(U,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ANN.MatrixUtils.ColumnVector GHC.Types.Double)
+                   (w1 :: ANN.Perceptron.Perceptron) ->
+                 case w1 of ww { ANN.Perceptron.Perceptron ww1 ww2 ->
+                 ANN.Perceptron.$wpropagateNet w ww1 }) -}
+35ee6d9a6eeb693c607d11b94710b154
+  updateNet ::
+    ANN.Perceptron.Perceptron
+    -> [ANN.Layer.BackpropagatedLayer] -> ANN.Perceptron.Perceptron
+  {- Arity: 2, Strictness: <L,U(A,U(U))><S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ANN.Perceptron.Perceptron)
+                   (w1 :: [ANN.Layer.BackpropagatedLayer]) ->
+                 case ANN.Perceptron.$wupdateNet w w1 of ww { (#,#) ww1 ww2 ->
+                 ANN.Perceptron.Perceptron ww1 ww2 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

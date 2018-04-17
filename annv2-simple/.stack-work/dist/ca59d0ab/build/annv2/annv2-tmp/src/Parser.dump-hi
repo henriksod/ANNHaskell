@@ -1,0 +1,204 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-09 20:58:18.7110116 UTC
+
+interface main@main:Parser 8002
+  interface hash: 006caad63e199454812c410e69866c4f
+  ABI hash: 756cf54e45c0a0567390049085513200
+  export-list hash: 8635acb85188349e73593441f2494cd5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: fe1965cd4d34411db34a27aa2f4972ed
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Parser.getDataLength
+  Parser.getImageNameList
+  Parser.parse
+  Parser.prepareInput
+  Parser.prepareOutput
+  Parser.readFileToList
+  Parser.resultFile
+  Parser.sampleImage
+module dependencies: ANN.MatrixUtils
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 loop-0.3.0@loop-0.3.0-4tGn4RSY02pFTwJ5L4CYRr
+                      matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa
+                      regex-compat-0.95.1@regex-compat-0.95.1-7IGKoiHTSKL3opdpEZ0pO8
+                      regex-posix-0.95.2@regex-posix-0.95.2-KQJt29lnRa45d6bFn9XkFO
+                      split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-KQJt29lnRa45d6bFn9XkFO:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-KQJt29lnRa45d6bFn9XkFO:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-KQJt29lnRa45d6bFn9XkFO:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-KQJt29lnRa45d6bFn9XkFO:Text.Regex.Posix.String
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.Functor 682cc832c233b71cec70179490a08631
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.Maybe ecf0c6f81372d9b58b142d5e758ea51b
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Float b620368aab866c2bb9d3a0a459566b84
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  base-4.9.1.0:Text.Read 3cc85705eeac93ec93da7f5edfd7bc15
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  ANN.MatrixUtils 57ce8606ce2775e9626281102ca3989e
+  exports: cc0a29729dbcc70af12dbc4541a77cf9
+  hadamard 258189614c3a3d6a39efb42a1e9894b8
+  sumAll2x2 5f8da34aa5435841dd1f9faf964fe122
+import  -/  matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w:Data.Matrix bf891f258ea75a4e62c2cf20c00a338b
+import  -/  regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa:Text.Regex.Base.RegexLike 6dc67c8ba7c01aef7d533609ce774dfb
+import  -/  regex-compat-0.95.1@regex-compat-0.95.1-7IGKoiHTSKL3opdpEZ0pO8:Text.Regex 859d416f0ac6356ececa396f0ca58e33
+import  -/  regex-posix-0.95.2@regex-posix-0.95.2-KQJt29lnRa45d6bFn9XkFO:Text.Regex.Posix 7c41f5c2235164b8dd1a9957bbae493a
+import  -/  regex-posix-0.95.2@regex-posix-0.95.2-KQJt29lnRa45d6bFn9XkFO:Text.Regex.Posix.Wrap c80870b4faba01b19726225d849845b6
+import  -/  split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT:Data.List.Split 272c5cfa667e04d85d90f02a3d135474
+import  -/  split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT:Data.List.Split.Internals 0d2d4848ca60317e9a83da501ccf16c9
+import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector 1403384d2f6b40dd8aab4268ede0dcdf
+f5b460575846f94cb424a6592cc42bcd
+  $smaximum1 :: GHC.Types.Double
+  {- Strictness: x -}
+f0a0f59f5f25fe61cacd5ca0b1e46baa
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Parser.$trModule2
+                   Parser.$trModule1) -}
+3bb112fe95a6a1ba67f7413689a4712f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Parser"#) -}
+9ac4f0eece8cebd95bd00f913c45b738
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+b511455ed1443fd6cddf6c9feceff7ab
+  $wsampleImage ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int -> [GHC.Types.Double] -> [GHC.Types.Double]
+  {- Arity: 3, Strictness: <S,U><L,U(U)><L,1*U>, Inline: [0] -}
+db496ecea78b452a38f6905c97f7ec42
+  getDataLength ::
+    [(GHC.Types.Int, [GHC.Types.Double])] -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: [(GHC.Types.Int, [GHC.Types.Double])]) ->
+                 case ds of wild {
+                   [] -> Parser.getDataLength1
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) ds3 d ->
+                      case GHC.List.$wlenAcc @ GHC.Types.Double d 0# of ww2 { DEFAULT ->
+                      GHC.Types.I# ww2 } } }) -}
+0b77daf06e64e720c165e09dd6995cb4
+  getDataLength1 :: GHC.Types.Int
+  {- Strictness: x -}
+0e849a0b05d1266a010336c874c4a93f
+  getImageNameList ::
+    [(GHC.Types.Int, [GHC.Types.Double])] -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+2ad5aa0e251ed5cc575b459b70713fce
+  parse :: [GHC.Base.String] -> [(GHC.Types.Int, [GHC.Types.Double])]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: [GHC.Base.String]) ->
+                 case ds of wild {
+                   [] -> GHC.Types.[] @ (GHC.Types.Int, [GHC.Types.Double])
+                   : ipv ipv1
+                   -> GHC.List.reverse1
+                        @ (GHC.Types.Int, [GHC.Types.Double])
+                        (Parser.parseData
+                           wild
+                           (GHC.Types.[] @ (GHC.Types.Int, [GHC.Types.Double])))
+                        (GHC.Types.[] @ (GHC.Types.Int, [GHC.Types.Double])) }) -}
+0e1407a8901eb0534f58260e28936a8a
+  parseData ::
+    [GHC.Base.String]
+    -> [(GHC.Types.Int, [GHC.Types.Double])]
+    -> [(GHC.Types.Int, [GHC.Types.Double])]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+28e5c59560ac9258f45fa8e1fdaeb4c3
+  prepareInput ::
+    [(GHC.Types.Int, [GHC.Types.Double])]
+    -> [Data.Matrix.Matrix GHC.Types.Double]
+  {- Arity: 1, Strictness: <S,1*U> -}
+94a6f36327dad7958f68d896f75c83e3
+  prepareOutput ::
+    [(GHC.Types.Int, [GHC.Types.Double])]
+    -> [Data.Matrix.Matrix GHC.Types.Double]
+  {- Arity: 1, Strictness: <S,1*U> -}
+eeee84ad911a05f12c5240dc98c942b3
+  readFileToList :: GHC.Base.String -> GHC.Types.IO [GHC.Base.String]
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Parser.readFileToList1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <[GHC.Base.String]>_R)) -}
+10e4e3092fe5b38163f00670d99b4661
+  readFileToList1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Base.String] #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (s :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        s
+                        GHC.IO.IOMode.ReadMode
+                        eta of ds1 { (#,#) ipv ipv2 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv2
+                        ipv of ds { (#,#) ipv1 ipv3 ->
+                 (# ipv1, Data.OldList.lines ipv3 #) } }) -}
+c2a646f429785eb590f8e60acd4e365c
+  resultFile ::
+    [GHC.Types.Int] -> [GHC.Types.Int] -> [GHC.Base.String]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+f3a85038deca961b57b44dba1c3d51af
+  sampleImage ::
+    GHC.Types.Int
+    -> GHC.Types.Int -> [GHC.Types.Double] -> [GHC.Types.Double]
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,U(U)><L,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: [GHC.Types.Double]) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Parser.$wsampleImage ww1 w1 w2 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

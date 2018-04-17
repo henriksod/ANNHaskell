@@ -1,0 +1,642 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-12 17:53:46.9432053 UTC
+
+interface main@main:ANN.Layer 8002
+  interface hash: f85b3c4385bd4ca02b5beaf4b58c3f68
+  ABI hash: 0f920668e5fe541d472b9c47fcb97695
+  export-list hash: 23c3cc260ccc1ffb148f4c2ade900907
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a8064a744799bfe694f5aed9eb4f47a9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ANN.Layer.backpropagate
+  ANN.Layer.backpropagateFinalLayer
+  ANN.Layer.propagate
+  ANN.Layer.update
+  ANN.Layer.BackpropagatedLayer{ANN.Layer.BackpropagatedLayer bpAS bpB bpBiasErrGrad bpDazzle bpErrGrad bpF'a bpIn bpOut bpW}
+  ANN.Layer.Layer{ANN.Layer.Layer lAS lB lW}
+  ANN.Layer.PropagatedLayer{ANN.Layer.PropagatedLayer ANN.Layer.PropagatedSensorLayer pAS pB pF'a pIn pOut pW}
+  ANN.MatrixUtils.ColumnVector
+module dependencies: ANN.ActivationFunction ANN.MatrixUtils
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 loop-0.3.0@loop-0.3.0-4tGn4RSY02pFTwJ5L4CYRr
+                      matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ANN.ActivationFunction e92592ac434db9b1002458bf0b297166
+  exports: ec8866300e01984a2bdb93e4524c6707
+  ActivationSpec 9fb3d0e3a35a2a741e41dc453db6020c
+  asF a4dc63e3d0ae4f8800932b7e248d8ea7
+  asF' 32bb033ee21b2598ea9ffb699c905745
+import  -/  ANN.MatrixUtils 57ce8606ce2775e9626281102ca3989e
+  exports: cc0a29729dbcc70af12dbc4541a77cf9
+  ColumnVector 4163f76af675644a6280005b342f5ebf
+  hadamard 258189614c3a3d6a39efb42a1e9894b8
+import  -/  matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w:Data.Matrix bf891f258ea75a4e62c2cf20c00a338b
+adfa8da0c4b8b5563bd921858e023158
+  $tc'BackpropagatedLayer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1518339548578081231##
+                   17041725275309884274##
+                   ANN.Layer.$trModule
+                   ANN.Layer.$tc'BackpropagatedLayer1) -}
+92492f55a258a0103d0d895f6902261d
+  $tc'BackpropagatedLayer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'BackpropagatedLayer"#) -}
+537ae3a508fecbe5da0ede54c4296167
+  $tc'Layer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9890190476660005559##
+                   11536424632606305916##
+                   ANN.Layer.$trModule
+                   ANN.Layer.$tc'Layer1) -}
+c5f47e09c250ace0730854a9a475a3d6
+  $tc'Layer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Layer"#) -}
+e608d5120e88b6f8bf74ad95e10a72d5
+  $tc'PropagatedLayer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4265504525217630044##
+                   13033826082284746462##
+                   ANN.Layer.$trModule
+                   ANN.Layer.$tc'PropagatedLayer1) -}
+98ae3260578c88c380681bc223f5c59b
+  $tc'PropagatedLayer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'PropagatedLayer"#) -}
+16b23257595777cd5e057c67ae6c8200
+  $tc'PropagatedSensorLayer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7149290242320633676##
+                   1876158157790610047##
+                   ANN.Layer.$trModule
+                   ANN.Layer.$tc'PropagatedSensorLayer1) -}
+d14083ccfff896a42e3956b6331c6e50
+  $tc'PropagatedSensorLayer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'PropagatedSensorLayer"#) -}
+7e29edd7d52f2e88cd83a02dee0ddbb7
+  $tcBackpropagatedLayer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1605535109264679309##
+                   3594760727261888931##
+                   ANN.Layer.$trModule
+                   ANN.Layer.$tcBackpropagatedLayer1) -}
+c03c8285b995c5ea06187c0dd844dc25
+  $tcBackpropagatedLayer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "BackpropagatedLayer"#) -}
+aeeb1346eb0bbe9fe260f8cd24398e85
+  $tcLayer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13425305064037796354##
+                   15151917788864380314##
+                   ANN.Layer.$trModule
+                   ANN.Layer.$tcLayer1) -}
+1164add6d03a9e76d54a7d030bd33b25
+  $tcLayer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Layer"#) -}
+11416f192fb778bd9dc18fe707460f09
+  $tcPropagatedLayer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14609200359610889704##
+                   16406649201152609850##
+                   ANN.Layer.$trModule
+                   ANN.Layer.$tcPropagatedLayer1) -}
+e880ad4e28f9b7541da3f98f01f49d4f
+  $tcPropagatedLayer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "PropagatedLayer"#) -}
+7cfe84b02c702c3ec3cb7ff1a54273a3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ANN.Layer.$trModule2
+                   ANN.Layer.$trModule1) -}
+8dbe97573f6b6d113715819a99d66dae
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ANN.Layer"#) -}
+4835dadea8c59f4dae193b9b52e9f5bd
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+9c5c61bb710582e2982e2b944c67f04f
+  $wbackpropagate ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.Layer.BackpropagatedLayer
+    -> (# ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          Data.Matrix.Matrix GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.ActivationFunction.ActivationSpec #)
+  {- Arity: 2,
+     Strictness: <L,U><L,1*U(1*U(U,U,U,U,U,U(U,A,U)),A,A,1*U(U,U,U,U,U,U(U,A,U)),A,A,1*U(U,U,U,U,U,U(U,A,U)),A,A)>,
+     Inline: [0] -}
+205f80a79146b09d99712934a6ddbe28
+  $wbackpropagateFinalLayer ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+    -> (# ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          Data.Matrix.Matrix GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.ActivationFunction.ActivationSpec #)
+  {- Arity: 2, Strictness: <L,U><L,U(U,U,U,U,U,U(U,A,U))>,
+     Inline: [0],
+     Unfolding: (\ (w :: ANN.Layer.PropagatedLayer)
+                   (w1 :: ANN.MatrixUtils.ColumnVector GHC.Types.Double) ->
+                 let {
+                   f'a :: ANN.MatrixUtils.ColumnVector GHC.Types.Double
+                   = case w of wild {
+                       ANN.Layer.PropagatedLayer ds ds1 ds2 ds3 ds4 ds5 -> ds2
+                       ANN.Layer.PropagatedSensorLayer ipv
+                       -> ANN.Layer.backpropagateFinalLayer5 }
+                 } in
+                 let {
+                   dazzle :: ANN.MatrixUtils.ColumnVector GHC.Types.Double
+                   = case w of wild {
+                       ANN.Layer.PropagatedLayer ds ds1 ds2 ds3 ds4 ds5
+                       -> case ds1 of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                          case Data.Matrix.$welementwise
+                                 @ GHC.Types.Double
+                                 @ GHC.Types.Double
+                                 @ GHC.Types.Double
+                                 GHC.Float.minusDouble
+                                 ww1
+                                 ww2
+                                 ww3
+                                 ww4
+                                 ww5
+                                 ww6
+                                 w1 of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                          Data.Matrix.M @ GHC.Types.Double ww8 ww9 ww10 ww11 ww12 ww13 } }
+                       ANN.Layer.PropagatedSensorLayer ds
+                       -> case ds of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                          case Data.Matrix.$welementwise
+                                 @ GHC.Types.Double
+                                 @ GHC.Types.Double
+                                 @ GHC.Types.Double
+                                 GHC.Float.minusDouble
+                                 ww1
+                                 ww2
+                                 ww3
+                                 ww4
+                                 ww5
+                                 ww6
+                                 w1 of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                          Data.Matrix.M @ GHC.Types.Double ww8 ww9 ww10 ww11 ww12 ww13 } } }
+                 } in
+                 (# dazzle,
+                    case dazzle of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                    case f'a of ww7 { Data.Matrix.M ww8 ww9 ww10 ww11 ww12 ww13 ->
+                    case w of wild {
+                      ANN.Layer.PropagatedLayer ds ds1 ds2 ds3 ds4 ds5
+                      -> case ds of ww14 { Data.Matrix.M ww15 ww16 ww17 ww18 ww19 ww20 ->
+                         case ANN.Layer.$werrorGrad
+                                ww1
+                                ww2
+                                ww3
+                                ww4
+                                ww5
+                                ww6
+                                ww8
+                                ww9
+                                ww10
+                                ww11
+                                ww12
+                                ww13
+                                ww15
+                                ww16
+                                ww17
+                                ww18
+                                ww19
+                                ww20 of ww21 { (#,,,,,#) ww22 ww23 ww24 ww25 ww26 ww27 ->
+                         Data.Matrix.M @ GHC.Types.Double ww22 ww23 ww24 ww25 ww26 ww27 } }
+                      ANN.Layer.PropagatedSensorLayer ipv
+                      -> ANN.Layer.backpropagateFinalLayer4 } } },
+                    ANN.MatrixUtils.hadamard dazzle f'a, f'a,
+                    case w of wild {
+                      ANN.Layer.PropagatedLayer ds ds1 ds2 ds3 ds4 ds5 -> ds
+                      ANN.Layer.PropagatedSensorLayer ipv
+                      -> ANN.Layer.backpropagateFinalLayer4 },
+                    case w of wild {
+                      ANN.Layer.PropagatedLayer ds ds1 ds2 ds3 ds4 ds5 -> ds1
+                      ANN.Layer.PropagatedSensorLayer ds -> ds },
+                    case w of wild {
+                      ANN.Layer.PropagatedLayer ds ds1 ds2 ds3 ds4 ds5 -> ds3
+                      ANN.Layer.PropagatedSensorLayer ipv
+                      -> ANN.Layer.backpropagateFinalLayer3 },
+                    case w of wild {
+                      ANN.Layer.PropagatedLayer ds ds1 ds2 ds3 ds4 ds5 -> ds4
+                      ANN.Layer.PropagatedSensorLayer ipv
+                      -> ANN.Layer.backpropagateFinalLayer2 },
+                    case w of wild {
+                      ANN.Layer.PropagatedLayer ds ds1 ds2 ds3 ds4 ds5 -> ds5
+                      ANN.Layer.PropagatedSensorLayer ipv
+                      -> ANN.Layer.backpropagateFinalLayer1 } #)) -}
+d1a7593d9400599312fb2a29b756ccd9
+  $werrorGrad ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Types.Double
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Types.Double
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Types.Double
+    -> (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#,
+          GHC.Prim.Int#, Data.Vector.Vector GHC.Types.Double #)
+  {- Arity: 18,
+     Strictness: <S,U><S,U><S,U><S,U><S,U><L,U(U,A,U)><S,U><S,U><S,U><S,U><S,U><L,U(U,A,U)><S,U><S,U><S,U><S,U><S,U><L,U(U,A,U)>,
+     Inline: [0] -}
+b6605e13d0af47a18e19e5f38f65e188
+  $wpropagate ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.Layer.Layer
+    -> (# ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          Data.Matrix.Matrix GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.ActivationFunction.ActivationSpec #)
+  {- Arity: 2,
+     Strictness: <L,1*U><L,U(1*U(U,U,U,U,U,U),1*U(U,U,U,U,U,U),U(U,U,U))>,
+     Inline: [0] -}
+6b1559294528a63027ec13ec3b1c392f
+  $wupdate ::
+    GHC.Types.Double
+    -> ANN.Layer.BackpropagatedLayer
+    -> (# Data.Matrix.Matrix GHC.Types.Double,
+          ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+          ANN.ActivationFunction.ActivationSpec #)
+  {- Arity: 2,
+     Strictness: <L,U(U)><L,U(A,1*U(U,U,U,U,U,1*U(U,U,U)),1*U(U,U,U,U,U,1*U(U,U,U)),A,A,A,1*U(U,U,U,U,U,U(U,A,U)),1*U(U,U,U,U,U,U(U,A,U)),1*U)>,
+     Inline: [0] -}
+edfe419f1619c6d9c281969f45f86cc5
+  data BackpropagatedLayer
+    = BackpropagatedLayer {bpDazzle :: ANN.MatrixUtils.ColumnVector
+                                         GHC.Types.Double,
+                           bpErrGrad :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+                           bpBiasErrGrad :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+                           bpF'a :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+                           bpIn :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+                           bpOut :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+                           bpW :: Data.Matrix.Matrix GHC.Types.Double,
+                           bpB :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+                           bpAS :: ANN.ActivationFunction.ActivationSpec}
+b866aaba8309eb48fc1f8620fe1104f2
+  data Layer
+    = Layer {lW :: Data.Matrix.Matrix GHC.Types.Double,
+             lB :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+             lAS :: ANN.ActivationFunction.ActivationSpec}
+4b9e3fdffd66404689c810f9444e6174
+  data PropagatedLayer
+    = PropagatedLayer {pIn :: ANN.MatrixUtils.ColumnVector
+                                GHC.Types.Double,
+                       pOut :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+                       pF'a :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+                       pW :: Data.Matrix.Matrix GHC.Types.Double,
+                       pB :: ANN.MatrixUtils.ColumnVector GHC.Types.Double,
+                       pAS :: ANN.ActivationFunction.ActivationSpec}
+    | PropagatedSensorLayer {pOut :: ANN.MatrixUtils.ColumnVector
+                                       GHC.Types.Double}
+30467f37d0f45655558c284b35c3dc4d
+  backpropagate ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.Layer.BackpropagatedLayer -> ANN.Layer.BackpropagatedLayer
+  {- Arity: 2,
+     Strictness: <L,U><L,1*U(1*U(U,U,U,U,U,U(U,A,U)),A,A,1*U(U,U,U,U,U,U(U,A,U)),A,A,1*U(U,U,U,U,U,U(U,A,U)),A,A)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ANN.Layer.PropagatedLayer)
+                   (w1 :: ANN.Layer.BackpropagatedLayer) ->
+                 case ANN.Layer.$wbackpropagate
+                        w
+                        w1 of ww { (#,,,,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
+                 ANN.Layer.BackpropagatedLayer
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9 }) -}
+6c0942fbf9468ddbddcae42f68a4fa2c
+  backpropagateFinalLayer ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+    -> ANN.Layer.BackpropagatedLayer
+  {- Arity: 2, Strictness: <L,U><L,U(U,U,U,U,U,U(U,A,U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ANN.Layer.PropagatedLayer)
+                   (w1 :: ANN.MatrixUtils.ColumnVector GHC.Types.Double) ->
+                 case ANN.Layer.$wbackpropagateFinalLayer
+                        w
+                        w1 of ww { (#,,,,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
+                 ANN.Layer.BackpropagatedLayer
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9 }) -}
+034be71091a5526720bc7ab4b2ee93ca
+  backpropagateFinalLayer1 :: ANN.ActivationFunction.ActivationSpec
+  {- Strictness: x -}
+c92a733e3f9a1f1e1192c46e76c6dfec
+  backpropagateFinalLayer2 ::
+    ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  {- Strictness: x -}
+1a7a391edae4cda8d866f65d9399f081
+  backpropagateFinalLayer3 :: Data.Matrix.Matrix GHC.Types.Double
+  {- Strictness: x -}
+99431c544d104efa2fba7597161591c4
+  backpropagateFinalLayer4 ::
+    ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  {- Strictness: x -}
+fd13a6b940cacaf84397dca0ed0ce020
+  backpropagateFinalLayer5 ::
+    ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  {- Strictness: x -}
+eef555301e009939427bca0d6bb6fbe1
+  bpAS ::
+    ANN.Layer.BackpropagatedLayer
+    -> ANN.ActivationFunction.ActivationSpec
+  RecSel Left ANN.Layer.BackpropagatedLayer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLS),1*U(A,A,A,A,A,A,A,A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.BackpropagatedLayer) ->
+                 case ds of wild { ANN.Layer.BackpropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 ds9 }) -}
+790b415d9f4b045dc28d62f2318dad2a
+  bpB ::
+    ANN.Layer.BackpropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.BackpropagatedLayer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLSL),1*U(A,A,A,A,A,A,A,1*U(U,U,U,U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.BackpropagatedLayer) ->
+                 case ds of wild { ANN.Layer.BackpropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 ds8 }) -}
+081a2eaf62f71f4f56ced96996ac09d4
+  bpBiasErrGrad ::
+    ANN.Layer.BackpropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.BackpropagatedLayer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLLL),1*U(A,A,1*U(U,U,U,U,U,U),A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.BackpropagatedLayer) ->
+                 case ds of wild { ANN.Layer.BackpropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 ds3 }) -}
+851391a23c1143df9fb9d6d05c67288d
+  bpDazzle ::
+    ANN.Layer.BackpropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.BackpropagatedLayer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),1*U(1*U(U,U,U,U,U,U),A,A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.BackpropagatedLayer) ->
+                 case ds of wild { ANN.Layer.BackpropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 ds1 }) -}
+2db11f0820315a0a816dc600f8c02603
+  bpErrGrad ::
+    ANN.Layer.BackpropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.BackpropagatedLayer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLLL),1*U(A,1*U(U,U,U,U,U,U),A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.BackpropagatedLayer) ->
+                 case ds of wild { ANN.Layer.BackpropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 ds2 }) -}
+d2659566503263622a6bc50d2f463471
+  bpF'a ::
+    ANN.Layer.BackpropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.BackpropagatedLayer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLLL),1*U(A,A,A,1*U(U,U,U,U,U,U),A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.BackpropagatedLayer) ->
+                 case ds of wild { ANN.Layer.BackpropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 ds4 }) -}
+d9f77d31a7640aca79e0220a775cfd52
+  bpIn ::
+    ANN.Layer.BackpropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.BackpropagatedLayer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLLL),1*U(A,A,A,A,1*U(U,U,U,U,U,U),A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.BackpropagatedLayer) ->
+                 case ds of wild { ANN.Layer.BackpropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 ds5 }) -}
+6cf5594be4d84dbd5f17816a2f414a20
+  bpOut ::
+    ANN.Layer.BackpropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.BackpropagatedLayer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLLL),1*U(A,A,A,A,A,1*U(U,U,U,U,U,U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.BackpropagatedLayer) ->
+                 case ds of wild { ANN.Layer.BackpropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 ds6 }) -}
+5b9096d4b23b950a880d8e171a375409
+  bpW ::
+    ANN.Layer.BackpropagatedLayer
+    -> Data.Matrix.Matrix GHC.Types.Double
+  RecSel Left ANN.Layer.BackpropagatedLayer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSLL),1*U(A,A,A,A,A,A,1*U(U,U,U,U,U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.BackpropagatedLayer) ->
+                 case ds of wild { ANN.Layer.BackpropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 ds7 }) -}
+cd6d192b197bb01b92cd195005cf9a7a
+  lAS :: ANN.Layer.Layer -> ANN.ActivationFunction.ActivationSpec
+  RecSel Left ANN.Layer.Layer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLS),1*U(A,A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.Layer) ->
+                 case ds of wild { ANN.Layer.Layer ds1 ds2 ds3 -> ds3 }) -}
+d220b6580bc827c6c2637cc0fe4fd5d7
+  lB ::
+    ANN.Layer.Layer -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.Layer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSL),1*U(A,1*U(U,U,U,U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.Layer) ->
+                 case ds of wild { ANN.Layer.Layer ds1 ds2 ds3 -> ds2 }) -}
+2bfaa02d6948c457970f6022ed2e63ba
+  lW :: ANN.Layer.Layer -> Data.Matrix.Matrix GHC.Types.Double
+  RecSel Left ANN.Layer.Layer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U,U,U,U,U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.Layer) ->
+                 case ds of wild { ANN.Layer.Layer ds1 ds2 ds3 -> ds1 }) -}
+25dbd9823ff33ceb1ad423d82dd4f0ed
+  pAS ::
+    ANN.Layer.PropagatedLayer -> ANN.ActivationFunction.ActivationSpec
+  RecSel Left ANN.Layer.PropagatedLayer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.PropagatedLayer) ->
+                 case ds of wild {
+                   ANN.Layer.PropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 -> ds6
+                   ANN.Layer.PropagatedSensorLayer ipv
+                   -> ANN.Layer.backpropagateFinalLayer1 }) -}
+48046a5a9a392dc025a8a0af48c2d105
+  pB ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.PropagatedLayer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.PropagatedLayer) ->
+                 case ds of wild {
+                   ANN.Layer.PropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 -> ds5
+                   ANN.Layer.PropagatedSensorLayer ipv
+                   -> ANN.Layer.backpropagateFinalLayer2 }) -}
+53f52431ef0d3ad4268912c32385ffc4
+  pF'a ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.PropagatedLayer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.PropagatedLayer) ->
+                 case ds of wild {
+                   ANN.Layer.PropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 -> ds3
+                   ANN.Layer.PropagatedSensorLayer ipv
+                   -> ANN.Layer.backpropagateFinalLayer5 }) -}
+1865ef9fde10e384cbba613be0240b5f
+  pIn ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.PropagatedLayer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.PropagatedLayer) ->
+                 case ds of wild {
+                   ANN.Layer.PropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 -> ds1
+                   ANN.Layer.PropagatedSensorLayer ipv
+                   -> ANN.Layer.backpropagateFinalLayer4 }) -}
+263ec8019df650b13dee4c57bd99c89e
+  pOut ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  RecSel Left ANN.Layer.PropagatedLayer
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.PropagatedLayer) ->
+                 case ds of wild {
+                   ANN.Layer.PropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 -> ds2
+                   ANN.Layer.PropagatedSensorLayer ds1 -> ds1 }) -}
+2386a24880499cce20f6d3981757316a
+  pW ::
+    ANN.Layer.PropagatedLayer -> Data.Matrix.Matrix GHC.Types.Double
+  RecSel Left ANN.Layer.PropagatedLayer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ANN.Layer.PropagatedLayer) ->
+                 case ds of wild {
+                   ANN.Layer.PropagatedLayer ds1 ds2 ds3 ds4 ds5 ds6 -> ds4
+                   ANN.Layer.PropagatedSensorLayer ipv
+                   -> ANN.Layer.backpropagateFinalLayer3 }) -}
+f43375f9149eac3d54fe5599e8aabda7
+  propagate ::
+    ANN.Layer.PropagatedLayer
+    -> ANN.Layer.Layer -> ANN.Layer.PropagatedLayer
+  {- Arity: 2,
+     Strictness: <L,1*U><L,U(1*U(U,U,U,U,U,U),1*U(U,U,U,U,U,U),U(U,U,U))>m1,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ANN.Layer.PropagatedLayer) (w1 :: ANN.Layer.Layer) ->
+                 case ANN.Layer.$wpropagate
+                        w
+                        w1 of ww { (#,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 ANN.Layer.PropagatedLayer ww1 ww2 ww3 ww4 ww5 ww6 }) -}
+b4fcf00911e6ccd511a0228926fa4020
+  update ::
+    GHC.Types.Double
+    -> ANN.Layer.BackpropagatedLayer -> ANN.Layer.Layer
+  {- Arity: 2,
+     Strictness: <L,U(U)><L,U(A,1*U(U,U,U,U,U,1*U(U,U,U)),1*U(U,U,U,U,U,1*U(U,U,U)),A,A,A,1*U(U,U,U,U,U,U(U,A,U)),1*U(U,U,U,U,U,U(U,A,U)),1*U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Double) (w1 :: ANN.Layer.BackpropagatedLayer) ->
+                 case ANN.Layer.$wupdate w w1 of ww { (#,,#) ww1 ww2 ww3 ->
+                 ANN.Layer.Layer ww1 ww2 ww3 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

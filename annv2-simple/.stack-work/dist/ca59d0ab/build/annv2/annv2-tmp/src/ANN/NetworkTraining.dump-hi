@@ -1,0 +1,134 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-20 17:33:45.0826965 UTC
+
+interface main@main:ANN.NetworkTraining 8002
+  interface hash: 6b7548f5a0fdc9182b26cee8b142f6b7
+  ABI hash: 870db6c46d0b33c0500cdce2350ca672
+  export-list hash: b899499481ec013887529e24e17404a1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a8064a744799bfe694f5aed9eb4f47a9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ANN.NetworkTraining.testNetwork
+  ANN.NetworkTraining.trainNetwork
+module dependencies: ANN.ActivationFunction ANN.Layer
+                     ANN.MatrixUtils ANN.Network
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 loop-0.3.0@loop-0.3.0-4tGn4RSY02pFTwJ5L4CYRr
+                      matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.Maybe ecf0c6f81372d9b58b142d5e758ea51b
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  base-4.9.1.0:Text.Printf 4a4d1d716706026cbed820a788dfe3bb
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  ANN.ActivationFunction e92592ac434db9b1002458bf0b297166
+  exports: ec8866300e01984a2bdb93e4524c6707
+import  -/  ANN.Layer 0f920668e5fe541d472b9c47fcb97695
+  exports: 23c3cc260ccc1ffb148f4c2ade900907
+import  -/  ANN.MatrixUtils 57ce8606ce2775e9626281102ca3989e
+  exports: cc0a29729dbcc70af12dbc4541a77cf9
+  ColumnVector 4163f76af675644a6280005b342f5ebf
+import  -/  ANN.Network b57e78a5098f401971022292ac93b345
+  exports: 61af9d3d01ed4603d42290350138e792
+  Network c0745e40db0e3343180d9cf03b0dc6aa
+  backpropagateNet fa43f04c94ced2aca76ef045df321df7
+  getOutput 12647c2ea9b78b48fa8c50fba5973ae0
+  propagateNet 258a2005da638a67efdea2b341115159
+  updateNet f13d36bacc741e0854ba0af693d7c122
+import  -/  matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w:Data.Matrix bf891f258ea75a4e62c2cf20c00a338b
+import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector 1403384d2f6b40dd8aab4268ede0dcdf
+4f77ac7b37a4b59cebd8a86d9fe98963
+  $sprintf3 :: () GHC.Types.~~ ()
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq# @ * @ * @ () @ () @~ <()>_N) -}
+b7fa3f16e68eb42397bfd0dc4c82a0c9
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ANN.NetworkTraining.$trModule2
+                   ANN.NetworkTraining.$trModule1) -}
+6acc71b160dde7afce448ea3070bf91f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ANN.NetworkTraining"#) -}
+a47d7abf2c873615fac6a15352d0694d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+ad581c9518991527254f5cbc9c6a989c
+  testNetwork ::
+    ANN.Network.Network
+    -> [ANN.MatrixUtils.ColumnVector GHC.Types.Double]
+    -> [GHC.Types.Int]
+  {- Arity: 2, Strictness: <L,U(U,A)><S,1*U> -}
+210a91be923d268fc0c3cea4d427166c
+  trainNetwork ::
+    [ANN.MatrixUtils.ColumnVector GHC.Types.Double]
+    -> [ANN.MatrixUtils.ColumnVector GHC.Types.Double]
+    -> ANN.Network.Network
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Int
+    -> GHC.Types.IO ANN.Network.Network
+  {- Arity: 7,
+     Strictness: <L,U><L,U><L,U(U,U(U))><L,U(U)><L,U(U)><L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                ANN.NetworkTraining.trainNetwork1
+                  `cast`
+                (<[ANN.MatrixUtils.ColumnVector GHC.Types.Double]>_R
+                 ->_R <[ANN.MatrixUtils.ColumnVector GHC.Types.Double]>_R
+                 ->_R <ANN.Network.Network>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <ANN.Network.Network>_R)) -}
+cfe6fbdda1bdccc0decbc4bd1cff3a62
+  trainNetwork1 ::
+    [ANN.MatrixUtils.ColumnVector GHC.Types.Double]
+    -> [ANN.MatrixUtils.ColumnVector GHC.Types.Double]
+    -> ANN.Network.Network
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, ANN.Network.Network #)
+  {- Arity: 7,
+     Strictness: <L,U><L,U><L,U(U,U(U))><L,U(U)><L,U(U)><L,U(U)><S,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

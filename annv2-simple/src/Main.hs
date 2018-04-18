@@ -17,6 +17,7 @@ import ANN.NetworkTraining
 
 import qualified Parser
 
+-- |The main function.
 main :: IO ()
 main = do
   (trainingSet:trainingFacit:testSet:_) <- getArgs

@@ -36,7 +36,7 @@ main = do
           inp = Parser.prepareInput trainingData --map (M.fromList 100 1 . Parser.sampleImage 1 40 . M.toList . rep 2) (Parser.prepareInput trainingData)
           testInp = Parser.prepareInput testData --map (M.fromList 100 1 . Parser.sampleImage 1 40 . M.toList . rep 2) (Parser.prepareInput testData)
           out = Parser.prepareOutput facitData
-          prc = buildNetwork 0.1 [wm1,wm2] tanhAS
+          prc = buildNetwork 0.3 [wm1,wm2] tanhAS
 
       putStrLn "Using the following parameters:"
       putStrLn "Network: Input -> 400 -> 9 -> 4 -> Output"

@@ -126,13 +126,6 @@
   (major1) == 1 && (major2) <  24 || \
   (major1) == 1 && (major2) == 24 && (minor) <= 0)
 
-/* tool pkg-config-0.28 */
-#define TOOL_VERSION_pkg_config "0.28"
-#define MIN_TOOL_VERSION_pkg_config(major1,major2,minor) (\
-  (major1) <  0 || \
-  (major1) == 0 && (major2) <  28 || \
-  (major1) == 0 && (major2) == 28 && (minor) <= 0)
-
 /* tool strip-2.25 */
 #define TOOL_VERSION_strip "2.25"
 #define MIN_TOOL_VERSION_strip(major1,major2,minor) (\

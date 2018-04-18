@@ -31,7 +31,7 @@ trainNetwork ins outs prc errLim tP i = do
   printf "%.5f\t" deltaV
   printf "%.5f\n\n" deltaT
 
-  if (abs deltaT < 0.005 || abs deltaV < 0.005) && validation < errLim || i > 100
+  if (abs deltaT < 0.005 || abs deltaV < 0.005) && validation < errLim || i > 300
     then return training
     else trainNetwork ins outs training errLim tP (i+1)
   where portion x = round (x * realToFrac (length ins))

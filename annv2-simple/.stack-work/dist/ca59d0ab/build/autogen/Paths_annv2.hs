@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "D:\\Dropbox\\Skolarbete\\Robotics and Control\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\bin"
-libdir     = "D:\\Dropbox\\Skolarbete\\Robotics and Control\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\lib\\x86_64-windows-ghc-8.0.2\\annv2-0.1.0.0"
-dynlibdir  = "D:\\Dropbox\\Skolarbete\\Robotics and Control\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\lib\\x86_64-windows-ghc-8.0.2"
-datadir    = "D:\\Dropbox\\Skolarbete\\Robotics and Control\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\share\\x86_64-windows-ghc-8.0.2\\annv2-0.1.0.0"
-libexecdir = "D:\\Dropbox\\Skolarbete\\Robotics and Control\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\libexec"
-sysconfdir = "D:\\Dropbox\\Skolarbete\\Robotics and Control\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\etc"
+bindir     = "C:\\Users\\Henrik\\Documents\\Projekt\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\bin"
+libdir     = "C:\\Users\\Henrik\\Documents\\Projekt\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\lib\\x86_64-windows-ghc-8.0.2\\annv2-0.1.0.0"
+dynlibdir  = "C:\\Users\\Henrik\\Documents\\Projekt\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\lib\\x86_64-windows-ghc-8.0.2"
+datadir    = "C:\\Users\\Henrik\\Documents\\Projekt\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\share\\x86_64-windows-ghc-8.0.2\\annv2-0.1.0.0"
+libexecdir = "C:\\Users\\Henrik\\Documents\\Projekt\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\libexec"
+sysconfdir = "C:\\Users\\Henrik\\Documents\\Projekt\\ANNHaskell\\annv2-simple\\.stack-work\\install\\7abedeba\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "annv2_bindir") (\_ -> return bindir)

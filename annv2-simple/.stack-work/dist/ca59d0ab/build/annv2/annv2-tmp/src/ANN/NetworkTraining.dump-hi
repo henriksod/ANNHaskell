@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-04-18 20:50:01.1009638 UTC
+2018-05-10 14:29:42.5180356 UTC
 
 interface main@main:ANN.NetworkTraining 8002
-  interface hash: 6b7548f5a0fdc9182b26cee8b142f6b7
+  interface hash: 162edc746d5c4ba1a77aad07112f37cf
   ABI hash: 870db6c46d0b33c0500cdce2350ca672
   export-list hash: b899499481ec013887529e24e17404a1
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -53,17 +53,17 @@ import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
 import  -/  ANN.ActivationFunction e92592ac434db9b1002458bf0b297166
   exports: ec8866300e01984a2bdb93e4524c6707
-import  -/  ANN.Layer 0f920668e5fe541d472b9c47fcb97695
+import  -/  ANN.Layer bf57acc8869d289f92950e73fb357a21
   exports: 23c3cc260ccc1ffb148f4c2ade900907
-import  -/  ANN.MatrixUtils 57ce8606ce2775e9626281102ca3989e
+import  -/  ANN.MatrixUtils ae1742b9fe1520ac81fa34740122d55c
   exports: cc0a29729dbcc70af12dbc4541a77cf9
   ColumnVector 4163f76af675644a6280005b342f5ebf
-import  -/  ANN.Network b57e78a5098f401971022292ac93b345
+import  -/  ANN.Network 0157058a50944c8db0d215147edf9cea
   exports: 61af9d3d01ed4603d42290350138e792
   Network c0745e40db0e3343180d9cf03b0dc6aa
-  backpropagateNet fa43f04c94ced2aca76ef045df321df7
+  backpropagateNet 4e00d1159fe0f1553048ca1cd933e222
   getOutput 12647c2ea9b78b48fa8c50fba5973ae0
-  propagateNet 258a2005da638a67efdea2b341115159
+  propagateNet 57f8384a028574dfa9e9cfddabf5610f
   updateNet f13d36bacc741e0854ba0af693d7c122
 import  -/  matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w:Data.Matrix bf891f258ea75a4e62c2cf20c00a338b
 import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector 1403384d2f6b40dd8aab4268ede0dcdf

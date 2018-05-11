@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-12 17:53:46.9432053 UTC
+2018-05-10 14:29:42.0511623 UTC
 
 interface main@main:ANN.Layer 8002
-  interface hash: f85b3c4385bd4ca02b5beaf4b58c3f68
-  ABI hash: 0f920668e5fe541d472b9c47fcb97695
+  interface hash: 1051a9372f3869a7d76131095186ac38
+  ABI hash: bf57acc8869d289f92950e73fb357a21
   export-list hash: 23c3cc260ccc1ffb148f4c2ade900907
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: a8064a744799bfe694f5aed9eb4f47a9
@@ -50,10 +50,10 @@ import  -/  ANN.ActivationFunction e92592ac434db9b1002458bf0b297166
   ActivationSpec 9fb3d0e3a35a2a741e41dc453db6020c
   asF a4dc63e3d0ae4f8800932b7e248d8ea7
   asF' 32bb033ee21b2598ea9ffb699c905745
-import  -/  ANN.MatrixUtils 57ce8606ce2775e9626281102ca3989e
+import  -/  ANN.MatrixUtils ae1742b9fe1520ac81fa34740122d55c
   exports: cc0a29729dbcc70af12dbc4541a77cf9
   ColumnVector 4163f76af675644a6280005b342f5ebf
-  hadamard 258189614c3a3d6a39efb42a1e9894b8
+  hadamard 556bdd4daee1c85f56db69b943891589
 import  -/  matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w:Data.Matrix bf891f258ea75a4e62c2cf20c00a338b
 adfa8da0c4b8b5563bd921858e023158
   $tc'BackpropagatedLayer :: GHC.Types.TyCon
@@ -169,7 +169,7 @@ e880ad4e28f9b7541da3f98f01f49d4f
   {- Arity: 2,
      Strictness: <L,U><L,1*U(1*U(U,U,U,U,U,U(U,A,U)),A,A,1*U(U,U,U,U,U,U(U,A,U)),A,A,1*U(U,U,U,U,U,U(U,A,U)),A,A)>,
      Inline: [0] -}
-205f80a79146b09d99712934a6ddbe28
+9c636e26682f8b63d15b1df655a99662
   $wbackpropagateFinalLayer ::
     ANN.Layer.PropagatedLayer
     -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
@@ -374,7 +374,7 @@ b866aaba8309eb48fc1f8620fe1104f2
                    ww7
                    ww8
                    ww9 }) -}
-6c0942fbf9468ddbddcae42f68a4fa2c
+a1541c947619e1fa9adffc30c97acd2d
   backpropagateFinalLayer ::
     ANN.Layer.PropagatedLayer
     -> ANN.MatrixUtils.ColumnVector GHC.Types.Double

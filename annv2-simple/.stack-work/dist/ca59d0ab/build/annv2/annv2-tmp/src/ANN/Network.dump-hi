@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-15 12:25:07.9283812 UTC
+2018-05-10 14:29:42.3550921 UTC
 
 interface main@main:ANN.Network 8002
-  interface hash: bd91184360b8f4dea5ff7191dc090a6a
-  ABI hash: b57e78a5098f401971022292ac93b345
+  interface hash: bd197f1ce7fb02c5eb764de45f82e782
+  ABI hash: 0157058a50944c8db0d215147edf9cea
   export-list hash: 61af9d3d01ed4603d42290350138e792
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: a8064a744799bfe694f5aed9eb4f47a9
@@ -52,7 +52,7 @@ import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
 import  -/  ANN.ActivationFunction e92592ac434db9b1002458bf0b297166
   exports: ec8866300e01984a2bdb93e4524c6707
   ActivationSpec 9fb3d0e3a35a2a741e41dc453db6020c
-import  -/  ANN.Layer 0f920668e5fe541d472b9c47fcb97695
+import  -/  ANN.Layer bf57acc8869d289f92950e73fb357a21
   exports: 23c3cc260ccc1ffb148f4c2ade900907
   BackpropagatedLayer edfe419f1619c6d9c281969f45f86cc5
   Layer 3740adea9140c73e07d2275218821265
@@ -60,7 +60,7 @@ import  -/  ANN.Layer 0f920668e5fe541d472b9c47fcb97695
   PropagatedLayer 4b9e3fdffd66404689c810f9444e6174
   PropagatedSensorLayer ab52206ace989c455d40d943f6e52c33
   backpropagate 30467f37d0f45655558c284b35c3dc4d
-  backpropagateFinalLayer 6c0942fbf9468ddbddcae42f68a4fa2c
+  backpropagateFinalLayer a1541c947619e1fa9adffc30c97acd2d
   lAS cd6d192b197bb01b92cd195005cf9a7a
   lB d220b6580bc827c6c2637cc0fe4fd5d7
   lW 2bfaa02d6948c457970f6022ed2e63ba
@@ -68,7 +68,7 @@ import  -/  ANN.Layer 0f920668e5fe541d472b9c47fcb97695
   pW 2386a24880499cce20f6d3981757316a
   propagate f43375f9149eac3d54fe5599e8aabda7
   update b4fcf00911e6ccd511a0228926fa4020
-import  -/  ANN.MatrixUtils 57ce8606ce2775e9626281102ca3989e
+import  -/  ANN.MatrixUtils ae1742b9fe1520ac81fa34740122d55c
   exports: cc0a29729dbcc70af12dbc4541a77cf9
   ColumnVector 4163f76af675644a6280005b342f5ebf
 import  -/  matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w:Data.Matrix bf891f258ea75a4e62c2cf20c00a338b
@@ -110,7 +110,7 @@ cc3a35278bace18bf5661d84bb784f95
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-36e758a3464c661642eb44cdef42fee0
+2a9d6aaac24b717645f2542659fa0b9e
   $wbackpropagateNet ::
     ANN.MatrixUtils.ColumnVector GHC.Types.Double
     -> [ANN.Layer.PropagatedLayer]
@@ -132,10 +132,9 @@ cc3a35278bace18bf5661d84bb784f95
                         @ ANN.Layer.BackpropagatedLayer
                         ANN.Layer.backpropagate
                         (case ANN.Layer.$wbackpropagateFinalLayer
-                                (ANN.Network.backpropagateNet_$sgo
-                                   (GHC.List.lastError @ ANN.Layer.PropagatedLayer)
-                                   x
-                                   xs)
+                                (ANN.Network.backpropagateNet_go
+                                   wild
+                                   (GHC.List.lastError @ ANN.Layer.PropagatedLayer))
                                 w of ww { (#,,,,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
                          ANN.Layer.BackpropagatedLayer
                            ww1
@@ -148,7 +147,7 @@ cc3a35278bace18bf5661d84bb784f95
                            ww8
                            ww9 })
                         (GHC.List.init1 @ ANN.Layer.PropagatedLayer x xs) }) -}
-6fb0b5bca96e7eb9b02bb7959c5f42e6
+ac74810b8dfab78dfc65d808d3c4565f
   $wbuildNetwork ::
     GHC.Types.Double
     -> [Data.Matrix.Matrix GHC.Types.Double]
@@ -198,26 +197,31 @@ cc3a35278bace18bf5661d84bb784f95
                                                         (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
                                                                   <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv ipv1 ->
                                               letrec {
-                                                $s$wfoldlM'_loop :: GHC.Prim.State#
-                                                                      GHC.Prim.RealWorld
-                                                                    -> GHC.Prim.Int#
-                                                                    -> [GHC.Types.Double]
-                                                                    -> GHC.Prim.Int#
-                                                                    -> (# GHC.Prim.State#
-                                                                            GHC.Prim.RealWorld,
-                                                                          GHC.Types.Int #)
-                                                  {- Arity: 4, Strictness: <S,U><S,U><L,1*U><L,U> -}
-                                                = \ (sc :: GHC.Prim.State#
-                                                             GHC.Prim.RealWorld)[OneShot]
-                                                    (sc1 :: GHC.Prim.Int#)
-                                                    (sc2 :: [GHC.Types.Double])
-                                                    (sc3 :: GHC.Prim.Int#) ->
+                                                $wfoldlM'_loop :: GHC.Types.SPEC
+                                                                  -> GHC.Prim.Int#
+                                                                  -> [GHC.Types.Double]
+                                                                  -> GHC.Prim.Int#
+                                                                  -> GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld
+                                                                  -> (# GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld,
+                                                                        GHC.Types.Int #)
+                                                  {- Arity: 5,
+                                                     Strictness: <S,1*U><L,U><L,1*U><S,U><S,U>,
+                                                     Inline: [0] -}
+                                                = \ (w4 :: GHC.Types.SPEC)
+                                                    (ww :: GHC.Prim.Int#)
+                                                    (ww1 :: [GHC.Types.Double])
+                                                    (ww2 :: GHC.Prim.Int#)
+                                                    (w5 :: GHC.Prim.State#
+                                                             GHC.Prim.RealWorld)[OneShot] ->
+                                                  case w4 of ds5 { DEFAULT ->
                                                   case GHC.Prim.tagToEnum#
                                                          @ GHC.Types.Bool
-                                                         (GHC.Prim.<=# sc1 0#) of wild2 {
+                                                         (GHC.Prim.<=# ww2 0#) of wild2 {
                                                     GHC.Types.False
-                                                    -> case sc2 of wild3 {
-                                                         [] -> (# sc, GHC.Types.I# sc3 #)
+                                                    -> case ww1 of wild3 {
+                                                         [] -> (# w5, GHC.Types.I# ww #)
                                                          : x1 xs1
                                                          -> case GHC.Prim.writeArray#
                                                                    @ (Control.Monad.Primitive.PrimState
@@ -225,33 +229,35 @@ cc3a35278bace18bf5661d84bb784f95
                                                                            GHC.Prim.RealWorld))
                                                                    @ GHC.Types.Double
                                                                    ipv1
-                                                                   sc3
+                                                                   ww
                                                                    x1
-                                                                   sc
+                                                                   w5
                                                                      `cast`
                                                                    (GHC.Prim.State#
                                                                       (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
                                                                                 <GHC.Prim.RealWorld>_N)))_R of s'# { DEFAULT ->
-                                                            $s$wfoldlM'_loop
+                                                            $wfoldlM'_loop
+                                                              GHC.Types.SPEC
+                                                              (GHC.Prim.+# ww 1#)
+                                                              xs1
+                                                              (GHC.Prim.-# ww2 1#)
                                                               s'#
                                                                 `cast`
                                                               (GHC.Prim.State#
                                                                  (Control.Monad.Primitive.D:R:PrimStateST[0]
-                                                                      <GHC.Prim.RealWorld>_N))_R
-                                                              (GHC.Prim.-# sc1 1#)
-                                                              xs1
-                                                              (GHC.Prim.+# sc3 1#) } }
-                                                    GHC.Types.True -> (# sc, GHC.Types.I# sc3 #) }
+                                                                      <GHC.Prim.RealWorld>_N))_R } }
+                                                    GHC.Types.True -> (# w5, GHC.Types.I# ww #) } }
                                               } in
-                                              case $s$wfoldlM'_loop
+                                              case $wfoldlM'_loop
+                                                     GHC.Types.SPEC
+                                                     0#
+                                                     ANN.Network.buildNetwork2
+                                                     dt
                                                      ipv
                                                        `cast`
                                                      (GHC.Prim.State#
                                                         (Control.Monad.Primitive.D:R:PrimStateST[0]
-                                                             <GHC.Prim.RealWorld>_N))_R
-                                                     dt
-                                                     ANN.Network.buildNetwork2
-                                                     0# of ds3 { (#,#) ipv6 ipv7 ->
+                                                             <GHC.Prim.RealWorld>_N))_R of ds3 { (#,#) ipv6 ipv7 ->
                                               case ipv7 of dt5 { GHC.Types.I# dt6 ->
                                               case GHC.Prim.unsafeFreezeArray#
                                                      @ (Control.Monad.Primitive.PrimState
@@ -294,12 +300,111 @@ cc3a35278bace18bf5661d84bb784f95
                                       xs of ww { (#,#) ww1 ww2 ->
                                ww2 })) },
                     w #)) -}
-0d9f6aedb1ada5ab34e74ef7bd83757c
+7a0518186aad8b08225d9033884eaafb
+  $wlvl ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# GHC.Types.Double
+    -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  {- Arity: 8, Strictness: <B,U><B,U><B,U><B,U><B,U><B,U><B,U><B,U>x,
+     Inline: [0] -}
+9e4126b4730cde42c74570838c8ba3cf
   $wpropagateNet ::
     ANN.MatrixUtils.ColumnVector GHC.Types.Double
     -> [ANN.Layer.Layer] -> [ANN.Layer.PropagatedLayer]
   {- Arity: 2, Strictness: <L,1*U(U,U,U,U,U,U(U,U,U))><L,U>,
-     Inline: [0] -}
+     Inline: [0],
+     Unfolding: (\ (w :: ANN.MatrixUtils.ColumnVector GHC.Types.Double)
+                   (ww :: [ANN.Layer.Layer]) ->
+                 case GHC.List.$wscanlGo
+                        @ ANN.Layer.PropagatedLayer
+                        @ ANN.Layer.Layer
+                        @ ANN.Layer.PropagatedLayer
+                        @ ANN.Layer.Layer
+                        ANN.Layer.propagate
+                        (ANN.Layer.PropagatedSensorLayer
+                           (case ww of wild {
+                              []
+                              -> case GHC.List.badHead
+                                 ret_ty (ANN.MatrixUtils.ColumnVector GHC.Types.Double)
+                                 of {}
+                              : x ds1
+                              -> case x of wild1 { ANN.Layer.Layer ds2 ds3 ds4 ->
+                                 case ds2 of wild2 { Data.Matrix.M dt dt1 dt2 dt3 dt4 ds5 ->
+                                 case w of wild3 { Data.Matrix.M dt7 dt8 dt9 dt10 dt11 ds6 ->
+                                 case GHC.Prim.tagToEnum#
+                                        @ GHC.Types.Bool
+                                        (GHC.Prim.==# dt1 dt7) of wild4 {
+                                   GHC.Types.False -> ANN.Network.propagateNet1 dt7 dt1
+                                   GHC.Types.True
+                                   -> case Data.Matrix.$wtoList
+                                             @ GHC.Types.Double
+                                             dt7
+                                             dt8
+                                             dt9
+                                             dt10
+                                             dt11
+                                             ds6 of wild5 {
+                                        []
+                                        -> case GHC.List.badHead
+                                           ret_ty (ANN.MatrixUtils.ColumnVector GHC.Types.Double)
+                                           of {}
+                                        : x1 ds7
+                                        -> case x1 of wild6 { GHC.Types.D# x2 ->
+                                           case GHC.Prim.tagToEnum#
+                                                  @ GHC.Types.Bool
+                                                  (GHC.Prim.>=## x2 0.0##) of wild7 {
+                                             GHC.Types.False
+                                             -> case ds6 of ww1 { Data.Vector.Vector ww2 ww3 ww4 ->
+                                                ANN.Network.$wlvl
+                                                  dt7
+                                                  dt8
+                                                  dt9
+                                                  dt10
+                                                  dt11
+                                                  ww2
+                                                  ww3
+                                                  ww4 }
+                                             GHC.Types.True
+                                             -> case GHC.Prim.tagToEnum#
+                                                       @ GHC.Types.Bool
+                                                       (GHC.Prim.<=## x2 1.0##) of wild8 {
+                                                  GHC.Types.False
+                                                  -> case ds6 of ww1 { Data.Vector.Vector ww2 ww3 ww4 ->
+                                                     ANN.Network.$wlvl
+                                                       dt7
+                                                       dt8
+                                                       dt9
+                                                       dt10
+                                                       dt11
+                                                       ww2
+                                                       ww3
+                                                       ww4 }
+                                                  GHC.Types.True
+                                                  -> case (ANN.Network.propagateNet_go
+                                                             wild5
+                                                             GHC.Types.True)
+                                                            `cast`
+                                                          (Data.Monoid.N:All[0]) of wild9 {
+                                                       GHC.Types.False
+                                                       -> case ds6 of ww1 { Data.Vector.Vector ww2 ww3 ww4 ->
+                                                          ANN.Network.$wlvl
+                                                            dt7
+                                                            dt8
+                                                            dt9
+                                                            dt10
+                                                            dt11
+                                                            ww2
+                                                            ww3
+                                                            ww4 }
+                                                       GHC.Types.True -> wild3 } } } } } } } } } }))
+                        ww of ww1 { (#,#) ww2 ww3 ->
+                 ww3 }) -}
 908e5953dbb90b3aac206f091a0ba471
   $wupdateNet ::
     ANN.Network.Network
@@ -310,7 +415,7 @@ c0745e40db0e3343180d9cf03b0dc6aa
   data Network
     = Network {layers :: [ANN.Layer.Layer],
                learningRate :: GHC.Types.Double}
-fa43f04c94ced2aca76ef045df321df7
+4e00d1159fe0f1553048ca1cd933e222
   backpropagateNet ::
     ANN.MatrixUtils.ColumnVector GHC.Types.Double
     -> [ANN.Layer.PropagatedLayer] -> [ANN.Layer.BackpropagatedLayer]
@@ -321,14 +426,12 @@ fa43f04c94ced2aca76ef045df321df7
                    (w1 :: [ANN.Layer.PropagatedLayer]) ->
                  case ANN.Network.$wbackpropagateNet w w1 of ww { (#,#) ww1 ww2 ->
                  GHC.Types.: @ ANN.Layer.BackpropagatedLayer ww1 ww2 }) -}
-3027d5aba37c345a5d3c44e83d959ae0
-  backpropagateNet_$sgo ::
-    ANN.Layer.PropagatedLayer
-    -> ANN.Layer.PropagatedLayer
-    -> [ANN.Layer.PropagatedLayer]
-    -> ANN.Layer.PropagatedLayer
-  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U><L,U><L,U> -}
-2eba28d692c77bf0e72369faf9bb58c7
+9047e6569080e451d21b29f272976c40
+  backpropagateNet_go ::
+    [ANN.Layer.PropagatedLayer]
+    -> ANN.Layer.PropagatedLayer -> ANN.Layer.PropagatedLayer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+72067291999f8d8cb32c9eed050ceb3c
   buildNetwork ::
     GHC.Types.Double
     -> [Data.Matrix.Matrix GHC.Types.Double]
@@ -418,7 +521,7 @@ e611ae34f274e90b3548cf80662d6c8a
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: ANN.Network.Network) ->
                  case ds of wild { ANN.Network.Network ds1 ds2 -> ds2 }) -}
-258a2005da638a67efdea2b341115159
+57f8384a028574dfa9e9cfddabf5610f
   propagateNet ::
     ANN.MatrixUtils.ColumnVector GHC.Types.Double
     -> ANN.Network.Network -> [ANN.Layer.PropagatedLayer]
@@ -429,6 +532,15 @@ e611ae34f274e90b3548cf80662d6c8a
                    (w1 :: ANN.Network.Network) ->
                  case w1 of ww { ANN.Network.Network ww1 ww2 ->
                  ANN.Network.$wpropagateNet w ww1 }) -}
+cf16b6c6386c2daee8bbcf6a91b44d90
+  propagateNet1 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int# -> ANN.MatrixUtils.ColumnVector GHC.Types.Double
+  {- Arity: 2, Strictness: <L,U><L,U>x -}
+4d3f962a3fcdb2f4a0ff1798e946d12c
+  propagateNet_go ::
+    [GHC.Types.Double] -> GHC.Types.Bool -> Data.Monoid.All
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
 f13d36bacc741e0854ba0af693d7c122
   updateNet ::
     ANN.Network.Network

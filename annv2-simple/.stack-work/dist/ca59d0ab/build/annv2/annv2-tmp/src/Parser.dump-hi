@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-09 20:58:18.7110116 UTC
+2018-05-10 14:29:40.8813293 UTC
 
 interface main@main:Parser 8002
-  interface hash: 006caad63e199454812c410e69866c4f
+  interface hash: c5b0345dfa6c5506b91cabbebaf6355f
   ABI hash: 756cf54e45c0a0567390049085513200
   export-list hash: 8635acb85188349e73593441f2494cd5
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -70,9 +70,9 @@ import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
 import  -/  base-4.9.1.0:Text.Read 3cc85705eeac93ec93da7f5edfd7bc15
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
-import  -/  ANN.MatrixUtils 57ce8606ce2775e9626281102ca3989e
+import  -/  ANN.MatrixUtils ae1742b9fe1520ac81fa34740122d55c
   exports: cc0a29729dbcc70af12dbc4541a77cf9
-  hadamard 258189614c3a3d6a39efb42a1e9894b8
+  hadamard 556bdd4daee1c85f56db69b943891589
   sumAll2x2 5f8da34aa5435841dd1f9faf964fe122
 import  -/  matrix-0.3.5.0@matrix-0.3.5.0-JvohPyGMusrL7Y0WxYUz8w:Data.Matrix bf891f258ea75a4e62c2cf20c00a338b
 import  -/  regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa:Text.Regex.Base.RegexLike 6dc67c8ba7c01aef7d533609ce774dfb

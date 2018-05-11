@@ -1,19 +1,25 @@
 
 ==================== FINAL INTERFACE ====================
-2018-04-18 20:53:30.0586961 UTC
+2018-05-10 14:38:22.2464758 UTC
 
 interface main@main:Main 8002
-  interface hash: 08935bef4e04be10897bd8199c21cf34
-  ABI hash: 2d39d1cc7659ddb6e4747ccc4c1c77d6
-  export-list hash: d434c6c20b911443ad81931b6c58aa73
+  interface hash: a533dcee2bb0474ce437d9dca1b7c3dc
+  ABI hash: d6d2799ac6e2256679a542a5a1a98359
+  export-list hash: a6b698c6e4cf88b48629621f156df493
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 9a9f422da74d74f4f823230910ae50b6
   sig of: Nothing
   used TH splices: False
   where
 exports:
+  Main.errorLimit
+  Main.learningRate
   Main.main
   Main.newWeightMatrix
+  Main.numHiddenNodes
+  Main.numInputNodes
+  Main.numOutputNodes
+  Main.trainingPortion
 module dependencies: ANN.ActivationFunction ANN.Layer
                      ANN.MatrixUtils ANN.Network ANN.NetworkTraining Parser
 package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
@@ -70,13 +76,13 @@ import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
 import  -/  ANN.ActivationFunction e92592ac434db9b1002458bf0b297166
   exports: ec8866300e01984a2bdb93e4524c6707
   tanhAS 18d2feb8fe62b4fb68df4174b2dd5656
-import  -/  ANN.Layer 0f920668e5fe541d472b9c47fcb97695
+import  -/  ANN.Layer bf57acc8869d289f92950e73fb357a21
   exports: 23c3cc260ccc1ffb148f4c2ade900907
-import  -/  ANN.MatrixUtils 57ce8606ce2775e9626281102ca3989e
+import  -/  ANN.MatrixUtils ae1742b9fe1520ac81fa34740122d55c
   exports: cc0a29729dbcc70af12dbc4541a77cf9
-import  -/  ANN.Network b57e78a5098f401971022292ac93b345
+import  -/  ANN.Network 0157058a50944c8db0d215147edf9cea
   exports: 61af9d3d01ed4603d42290350138e792
-  buildNetwork 2eba28d692c77bf0e72369faf9bb58c7
+  buildNetwork 72067291999f8d8cb32c9eed050ceb3c
 import  -/  ANN.NetworkTraining 870db6c46d0b33c0500cdce2350ca672
   exports: b899499481ec013887529e24e17404a1
   testNetwork ad581c9518991527254f5cbc9c6a989c
@@ -118,6 +124,12 @@ c524fb82aa633aedd3f9e28837c4db3a
     -> (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#,
           GHC.Prim.Int#, Data.Vector.Vector GHC.Types.Double #)
   {- Arity: 3, Strictness: <L,U><S,U><S,U>, Inline: [0] -}
+7ccc1efc5d2397e5e4a6e504245cad94
+  errorLimit :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.25##) -}
+c2be66424708260665486ac2cb756408
+  learningRate :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.3##) -}
 0669bef0c43ef5b57e858406b453c72f
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
@@ -175,6 +187,18 @@ a105cb7a49fb7d3570dac8d52dd7ed5b
                         ww1
                         ww3 of ww4 { (#,,,,,#) ww5 ww6 ww7 ww8 ww9 ww10 ->
                  Data.Matrix.M @ GHC.Types.Double ww5 ww6 ww7 ww8 ww9 ww10 } } }) -}
+23b32738647829ccc5258bdedd9fba79
+  numHiddenNodes :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 9#) -}
+e8eb788536ac1e1ab58ca9c144d0aba3
+  numInputNodes :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 400#) -}
+304db8dd0c408e184761b950278f0861
+  numOutputNodes :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+a6a929f9f1b8ea636f6fdbb02d5f5fe3
+  trainingPortion :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.95##) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
